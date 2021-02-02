@@ -1,0 +1,7 @@
+Prvo pokrenuti dva agenta igrača (najbitnija je putanja do xsb-a):
+python3 PrviAgent.py -p /home/vjezbe/software/Flora-2/XSB/bin/xsb -jid vbencek@localhost -pwd 123456
+python3 DrugiAgent.py -p /home/vjezbe/software/Flora-2/XSB/bin/xsb -jid agentVB@localhost -pwd 123456
+
+Zatim pokrenuti agenta igre:
+python3 AgentIgre.py -p /home/vjezbe/software/Flora-2/XSB/bin/xsb -jid vbencekIgra@localhost -pwd 123456 -jidp vbencek@localhost -jidd agentVB@localhost -t 1
+

@@ -1,0 +1,1165 @@
+Pritisni Enter za izlaz.
+vbencekigra: Započinjem FSM ponašanje
+Izgled ploče i njene pozicije:
+01------------02-----------03
+|             |             |
+|  09---------10--------11  |
+|  |          |         |   |
+|  |     17---18---19   |   |
+|  |     |         |    |   |
+08--16---24        20---12--4
+|  |     |         |    |   |
+|  |     23---22---21   |   |
+|  |          |         |   |
+|  15---------14--------13  |
+|             |             |
+07------------06------------05
+vbencekigra: Stanje1 -> Dohvat agenata
+vbencekigra: vbencek@localhost/ccea5-gv šalje poruku: Da želim igrati!
+vbencekigra: vbencek1@localhost/U5YUuVKh šalje poruku: Da želim igrati!
+vbencekigra: Stanje2 -> PočetakIgre/Postavljanje Žetona
+vbencekigra: vbencek@localhost/ccea5-gv šalje poruku: 1
+vbencek@localhost (Broj žetona za postaviti): 8
+vbencek1@localhost (Broj žetona za postaviti): 9
+O----------¤----------¤
+|          |          |
+|  ¤-------¤-------¤  |
+|  |       |       |  |
+|  |   ¤---¤---¤   |  |
+|  |   |       |   |  |
+¤--¤---¤       ¤---¤--¤
+|  |   |       |   |  |
+|  |   ¤---¤---¤   |  |
+|  |       |       |  |
+|  ¤-------¤-------¤  |
+|          |          |
+¤----------¤----------¤
+vbencekigra: vbencek1@localhost/U5YUuVKh šalje poruku: 11
+vbencek@localhost (Broj žetona za postaviti): 8
+vbencek1@localhost (Broj žetona za postaviti): 8
+O----------¤----------¤
+|          |          |
+|  ¤-------¤-------X  |
+|  |       |       |  |
+|  |   ¤---¤---¤   |  |
+|  |   |       |   |  |
+¤--¤---¤       ¤---¤--¤
+|  |   |       |   |  |
+|  |   ¤---¤---¤   |  |
+|  |       |       |  |
+|  ¤-------¤-------¤  |
+|          |          |
+¤----------¤----------¤
+vbencekigra: Stanje2 -> PočetakIgre/Postavljanje Žetona
+vbencekigra: vbencek@localhost/ccea5-gv šalje poruku: 21
+vbencek@localhost (Broj žetona za postaviti): 7
+vbencek1@localhost (Broj žetona za postaviti): 8
+O----------¤----------¤
+|          |          |
+|  ¤-------¤-------X  |
+|  |       |       |  |
+|  |   ¤---¤---¤   |  |
+|  |   |       |   |  |
+¤--¤---¤       ¤---¤--¤
+|  |   |       |   |  |
+|  |   ¤---¤---O   |  |
+|  |       |       |  |
+|  ¤-------¤-------¤  |
+|          |          |
+¤----------¤----------¤
+vbencekigra: vbencek1@localhost/U5YUuVKh šalje poruku: 6
+vbencek@localhost (Broj žetona za postaviti): 7
+vbencek1@localhost (Broj žetona za postaviti): 7
+O----------¤----------¤
+|          |          |
+|  ¤-------¤-------X  |
+|  |       |       |  |
+|  |   ¤---¤---¤   |  |
+|  |   |       |   |  |
+¤--¤---¤       ¤---¤--¤
+|  |   |       |   |  |
+|  |   ¤---¤---O   |  |
+|  |       |       |  |
+|  ¤-------¤-------¤  |
+|          |          |
+¤----------X----------¤
+vbencekigra: Stanje2 -> PočetakIgre/Postavljanje Žetona
+vbencekigra: vbencek@localhost/ccea5-gv šalje poruku: 17
+vbencek@localhost (Broj žetona za postaviti): 6
+vbencek1@localhost (Broj žetona za postaviti): 7
+O----------¤----------¤
+|          |          |
+|  ¤-------¤-------X  |
+|  |       |       |  |
+|  |   O---¤---¤   |  |
+|  |   |       |   |  |
+¤--¤---¤       ¤---¤--¤
+|  |   |       |   |  |
+|  |   ¤---¤---O   |  |
+|  |       |       |  |
+|  ¤-------¤-------¤  |
+|          |          |
+¤----------X----------¤
+vbencekigra: vbencek1@localhost/U5YUuVKh šalje poruku: 10
+vbencek@localhost (Broj žetona za postaviti): 6
+vbencek1@localhost (Broj žetona za postaviti): 6
+O----------¤----------¤
+|          |          |
+|  ¤-------X-------X  |
+|  |       |       |  |
+|  |   O---¤---¤   |  |
+|  |   |       |   |  |
+¤--¤---¤       ¤---¤--¤
+|  |   |       |   |  |
+|  |   ¤---¤---O   |  |
+|  |       |       |  |
+|  ¤-------¤-------¤  |
+|          |          |
+¤----------X----------¤
+vbencekigra: Stanje2 -> PočetakIgre/Postavljanje Žetona
+vbencekigra: vbencek@localhost/ccea5-gv šalje poruku: 9
+vbencek@localhost (Broj žetona za postaviti): 5
+vbencek1@localhost (Broj žetona za postaviti): 6
+O----------¤----------¤
+|          |          |
+|  O-------X-------X  |
+|  |       |       |  |
+|  |   O---¤---¤   |  |
+|  |   |       |   |  |
+¤--¤---¤       ¤---¤--¤
+|  |   |       |   |  |
+|  |   ¤---¤---O   |  |
+|  |       |       |  |
+|  ¤-------¤-------¤  |
+|          |          |
+¤----------X----------¤
+vbencekigra: vbencek1@localhost/U5YUuVKh šalje poruku: 2
+vbencek@localhost (Broj žetona za postaviti): 5
+vbencek1@localhost (Broj žetona za postaviti): 5
+O----------X----------¤
+|          |          |
+|  O-------X-------X  |
+|  |       |       |  |
+|  |   O---¤---¤   |  |
+|  |   |       |   |  |
+¤--¤---¤       ¤---¤--¤
+|  |   |       |   |  |
+|  |   ¤---¤---O   |  |
+|  |       |       |  |
+|  ¤-------¤-------¤  |
+|          |          |
+¤----------X----------¤
+vbencekigra: Stanje2 -> PočetakIgre/Postavljanje Žetona
+vbencekigra: vbencek@localhost/ccea5-gv šalje poruku: 20
+vbencek@localhost (Broj žetona za postaviti): 4
+vbencek1@localhost (Broj žetona za postaviti): 5
+O----------X----------¤
+|          |          |
+|  O-------X-------X  |
+|  |       |       |  |
+|  |   O---¤---¤   |  |
+|  |   |       |   |  |
+¤--¤---¤       O---¤--¤
+|  |   |       |   |  |
+|  |   ¤---¤---O   |  |
+|  |       |       |  |
+|  ¤-------¤-------¤  |
+|          |          |
+¤----------X----------¤
+vbencekigra: vbencek1@localhost/U5YUuVKh šalje poruku: 24
+vbencek@localhost (Broj žetona za postaviti): 4
+vbencek1@localhost (Broj žetona za postaviti): 4
+O----------X----------¤
+|          |          |
+|  O-------X-------X  |
+|  |       |       |  |
+|  |   O---¤---¤   |  |
+|  |   |       |   |  |
+¤--¤---X       O---¤--¤
+|  |   |       |   |  |
+|  |   ¤---¤---O   |  |
+|  |       |       |  |
+|  ¤-------¤-------¤  |
+|          |          |
+¤----------X----------¤
+vbencekigra: Stanje2 -> PočetakIgre/Postavljanje Žetona
+vbencekigra: vbencek@localhost/ccea5-gv šalje poruku: 19
+vbencek@localhost (Broj žetona za postaviti): 3
+vbencek1@localhost (Broj žetona za postaviti): 4
+O----------X----------¤
+|          |          |
+|  O-------X-------X  |
+|  |       |       |  |
+|  |   O---¤---O   |  |
+|  |   |       |   |  |
+¤--¤---X       O---¤--¤
+|  |   |       |   |  |
+|  |   ¤---¤---O   |  |
+|  |       |       |  |
+|  ¤-------¤-------¤  |
+|          |          |
+¤----------X----------¤
+vbencekigra: MLIN!
+vbencekigra: vbencek@localhost/ccea5-gv šalje poruku: 6
+vbencekigra: Maknut žeton na poziciji 6!
+O----------X----------¤
+|          |          |
+|  O-------X-------X  |
+|  |       |       |  |
+|  |   O---¤---O   |  |
+|  |   |       |   |  |
+¤--¤---X       O---¤--¤
+|  |   |       |   |  |
+|  |   ¤---¤---O   |  |
+|  |       |       |  |
+|  ¤-------¤-------¤  |
+|          |          |
+¤----------¤----------¤
+vbencekigra: vbencek1@localhost/U5YUuVKh šalje poruku: 23
+vbencek@localhost (Broj žetona za postaviti): 3
+vbencek1@localhost (Broj žetona za postaviti): 3
+O----------X----------¤
+|          |          |
+|  O-------X-------X  |
+|  |       |       |  |
+|  |   O---¤---O   |  |
+|  |   |       |   |  |
+¤--¤---X       O---¤--¤
+|  |   |       |   |  |
+|  |   X---¤---O   |  |
+|  |       |       |  |
+|  ¤-------¤-------¤  |
+|          |          |
+¤----------¤----------¤
+vbencekigra: Stanje2 -> PočetakIgre/Postavljanje Žetona
+vbencekigra: vbencek@localhost/ccea5-gv šalje poruku: 7
+vbencek@localhost (Broj žetona za postaviti): 2
+vbencek1@localhost (Broj žetona za postaviti): 3
+O----------X----------¤
+|          |          |
+|  O-------X-------X  |
+|  |       |       |  |
+|  |   O---¤---O   |  |
+|  |   |       |   |  |
+¤--¤---X       O---¤--¤
+|  |   |       |   |  |
+|  |   X---¤---O   |  |
+|  |       |       |  |
+|  ¤-------¤-------¤  |
+|          |          |
+O----------¤----------¤
+vbencekigra: vbencek1@localhost/U5YUuVKh šalje poruku: 4
+vbencek@localhost (Broj žetona za postaviti): 2
+vbencek1@localhost (Broj žetona za postaviti): 2
+O----------X----------¤
+|          |          |
+|  O-------X-------X  |
+|  |       |       |  |
+|  |   O---¤---O   |  |
+|  |   |       |   |  |
+¤--¤---X       O---¤--X
+|  |   |       |   |  |
+|  |   X---¤---O   |  |
+|  |       |       |  |
+|  ¤-------¤-------¤  |
+|          |          |
+O----------¤----------¤
+vbencekigra: Stanje2 -> PočetakIgre/Postavljanje Žetona
+vbencekigra: vbencek@localhost/ccea5-gv šalje poruku: 6
+vbencek@localhost (Broj žetona za postaviti): 1
+vbencek1@localhost (Broj žetona za postaviti): 2
+O----------X----------¤
+|          |          |
+|  O-------X-------X  |
+|  |       |       |  |
+|  |   O---¤---O   |  |
+|  |   |       |   |  |
+¤--¤---X       O---¤--X
+|  |   |       |   |  |
+|  |   X---¤---O   |  |
+|  |       |       |  |
+|  ¤-------¤-------¤  |
+|          |          |
+O----------O----------¤
+vbencekigra: vbencek1@localhost/U5YUuVKh šalje poruku: 12
+vbencek@localhost (Broj žetona za postaviti): 1
+vbencek1@localhost (Broj žetona za postaviti): 1
+O----------X----------¤
+|          |          |
+|  O-------X-------X  |
+|  |       |       |  |
+|  |   O---¤---O   |  |
+|  |   |       |   |  |
+¤--¤---X       O---X--X
+|  |   |       |   |  |
+|  |   X---¤---O   |  |
+|  |       |       |  |
+|  ¤-------¤-------¤  |
+|          |          |
+O----------O----------¤
+vbencekigra: Stanje2 -> PočetakIgre/Postavljanje Žetona
+vbencekigra: vbencek@localhost/ccea5-gv šalje poruku: 8
+vbencek@localhost (Broj žetona za postaviti): 0
+vbencek1@localhost (Broj žetona za postaviti): 1
+O----------X----------¤
+|          |          |
+|  O-------X-------X  |
+|  |       |       |  |
+|  |   O---¤---O   |  |
+|  |   |       |   |  |
+O--¤---X       O---X--X
+|  |   |       |   |  |
+|  |   X---¤---O   |  |
+|  |       |       |  |
+|  ¤-------¤-------¤  |
+|          |          |
+O----------O----------¤
+vbencekigra: MLIN!
+vbencekigra: vbencek@localhost/ccea5-gv šalje poruku: 12
+vbencekigra: Maknut žeton na poziciji 12!
+O----------X----------¤
+|          |          |
+|  O-------X-------X  |
+|  |       |       |  |
+|  |   O---¤---O   |  |
+|  |   |       |   |  |
+O--¤---X       O---¤--X
+|  |   |       |   |  |
+|  |   X---¤---O   |  |
+|  |       |       |  |
+|  ¤-------¤-------¤  |
+|          |          |
+O----------O----------¤
+vbencekigra: vbencek1@localhost/U5YUuVKh šalje poruku: 3
+vbencek@localhost (Broj žetona za postaviti): 0
+vbencek1@localhost (Broj žetona za postaviti): 0
+O----------X----------X
+|          |          |
+|  O-------X-------X  |
+|  |       |       |  |
+|  |   O---¤---O   |  |
+|  |   |       |   |  |
+O--¤---X       O---¤--X
+|  |   |       |   |  |
+|  |   X---¤---O   |  |
+|  |       |       |  |
+|  ¤-------¤-------¤  |
+|          |          |
+O----------O----------¤
+vbencek@localhost
+vbencek1@localhost
+vbencekigra: Stanje3 -> Kretanje zetonima po ploci
+vbencekigra: vbencek@localhost/ccea5-gv šalje poruku: 6;5
+vbencekigra: Pomak žetona: 6 -> 5
+vbencek@localhost (Broj žetona): 9
+vbencek1@localhost (Broj žetona): 7
+O----------X----------X
+|          |          |
+|  O-------X-------X  |
+|  |       |       |  |
+|  |   O---¤---O   |  |
+|  |   |       |   |  |
+O--¤---X       O---¤--X
+|  |   |       |   |  |
+|  |   X---¤---O   |  |
+|  |       |       |  |
+|  ¤-------¤-------¤  |
+|          |          |
+O----------¤----------O
+vbencekigra: vbencek1@localhost/U5YUuVKh šalje poruku: 11;12
+vbencekigra: Pomak žetona: 11 -> 12
+vbencek@localhost (Broj žetona): 9
+vbencek1@localhost (Broj žetona): 7
+O----------X----------X
+|          |          |
+|  O-------X-------¤  |
+|  |       |       |  |
+|  |   O---¤---O   |  |
+|  |   |       |   |  |
+O--¤---X       O---X--X
+|  |   |       |   |  |
+|  |   X---¤---O   |  |
+|  |       |       |  |
+|  ¤-------¤-------¤  |
+|          |          |
+O----------¤----------O
+vbencekigra: Stanje3 -> Kretanje zetonima po ploci
+vbencekigra: vbencek@localhost/ccea5-gv šalje poruku: 9;16
+vbencekigra: Pomak žetona: 9 -> 16
+vbencek@localhost (Broj žetona): 9
+vbencek1@localhost (Broj žetona): 7
+O----------X----------X
+|          |          |
+|  ¤-------X-------¤  |
+|  |       |       |  |
+|  |   O---¤---O   |  |
+|  |   |       |   |  |
+O--O---X       O---X--X
+|  |   |       |   |  |
+|  |   X---¤---O   |  |
+|  |       |       |  |
+|  ¤-------¤-------¤  |
+|          |          |
+O----------¤----------O
+vbencekigra: vbencek1@localhost/U5YUuVKh šalje poruku: 12;13
+vbencekigra: Pomak žetona: 12 -> 13
+vbencek@localhost (Broj žetona): 9
+vbencek1@localhost (Broj žetona): 7
+O----------X----------X
+|          |          |
+|  ¤-------X-------¤  |
+|  |       |       |  |
+|  |   O---¤---O   |  |
+|  |   |       |   |  |
+O--O---X       O---¤--X
+|  |   |       |   |  |
+|  |   X---¤---O   |  |
+|  |       |       |  |
+|  ¤-------¤-------X  |
+|          |          |
+O----------¤----------O
+vbencekigra: Stanje3 -> Kretanje zetonima po ploci
+vbencekigra: vbencek@localhost/ccea5-gv šalje poruku: 16;15
+vbencekigra: Pomak žetona: 16 -> 15
+vbencek@localhost (Broj žetona): 9
+vbencek1@localhost (Broj žetona): 7
+O----------X----------X
+|          |          |
+|  ¤-------X-------¤  |
+|  |       |       |  |
+|  |   O---¤---O   |  |
+|  |   |       |   |  |
+O--¤---X       O---¤--X
+|  |   |       |   |  |
+|  |   X---¤---O   |  |
+|  |       |       |  |
+|  O-------¤-------X  |
+|          |          |
+O----------¤----------O
+vbencekigra: vbencek1@localhost/U5YUuVKh šalje poruku: 10;9
+vbencekigra: Pomak žetona: 10 -> 9
+vbencek@localhost (Broj žetona): 9
+vbencek1@localhost (Broj žetona): 7
+O----------X----------X
+|          |          |
+|  X-------¤-------¤  |
+|  |       |       |  |
+|  |   O---¤---O   |  |
+|  |   |       |   |  |
+O--¤---X       O---¤--X
+|  |   |       |   |  |
+|  |   X---¤---O   |  |
+|  |       |       |  |
+|  O-------¤-------X  |
+|          |          |
+O----------¤----------O
+vbencekigra: Stanje3 -> Kretanje zetonima po ploci
+vbencekigra: vbencek@localhost/ccea5-gv šalje poruku: 20;12
+vbencekigra: Pomak žetona: 20 -> 12
+vbencek@localhost (Broj žetona): 9
+vbencek1@localhost (Broj žetona): 7
+O----------X----------X
+|          |          |
+|  X-------¤-------¤  |
+|  |       |       |  |
+|  |   O---¤---O   |  |
+|  |   |       |   |  |
+O--¤---X       ¤---O--X
+|  |   |       |   |  |
+|  |   X---¤---O   |  |
+|  |       |       |  |
+|  O-------¤-------X  |
+|          |          |
+O----------¤----------O
+vbencekigra: vbencek1@localhost/U5YUuVKh šalje poruku: 2;10
+vbencekigra: Pomak žetona: 2 -> 10
+vbencek@localhost (Broj žetona): 9
+vbencek1@localhost (Broj žetona): 7
+O----------¤----------X
+|          |          |
+|  X-------X-------¤  |
+|  |       |       |  |
+|  |   O---¤---O   |  |
+|  |   |       |   |  |
+O--¤---X       ¤---O--X
+|  |   |       |   |  |
+|  |   X---¤---O   |  |
+|  |       |       |  |
+|  O-------¤-------X  |
+|          |          |
+O----------¤----------O
+vbencekigra: Stanje3 -> Kretanje zetonima po ploci
+vbencekigra: vbencek@localhost/ccea5-gv šalje poruku: 12;20
+vbencekigra: Pomak žetona: 12 -> 20
+vbencek@localhost (Broj žetona): 9
+vbencek1@localhost (Broj žetona): 7
+O----------¤----------X
+|          |          |
+|  X-------X-------¤  |
+|  |       |       |  |
+|  |   O---¤---O   |  |
+|  |   |       |   |  |
+O--¤---X       O---¤--X
+|  |   |       |   |  |
+|  |   X---¤---O   |  |
+|  |       |       |  |
+|  O-------¤-------X  |
+|          |          |
+O----------¤----------O
+vbencekigra: MLIN!
+vbencekigra: vbencek@localhost/ccea5-gv šalje poruku: 10
+vbencekigra: Maknut žeton na poziciji 10!
+vbencek@localhost (Broj žetona): 9
+vbencek1@localhost (Broj žetona): 6
+O----------¤----------X
+|          |          |
+|  X-------¤-------¤  |
+|  |       |       |  |
+|  |   O---¤---O   |  |
+|  |   |       |   |  |
+O--¤---X       O---¤--X
+|  |   |       |   |  |
+|  |   X---¤---O   |  |
+|  |       |       |  |
+|  O-------¤-------X  |
+|          |          |
+O----------¤----------O
+vbencekigra: vbencek1@localhost/U5YUuVKh šalje poruku: 23;22
+vbencekigra: Pomak žetona: 23 -> 22
+vbencek@localhost (Broj žetona): 9
+vbencek1@localhost (Broj žetona): 6
+O----------¤----------X
+|          |          |
+|  X-------¤-------¤  |
+|  |       |       |  |
+|  |   O---¤---O   |  |
+|  |   |       |   |  |
+O--¤---X       O---¤--X
+|  |   |       |   |  |
+|  |   ¤---X---O   |  |
+|  |       |       |  |
+|  O-------¤-------X  |
+|          |          |
+O----------¤----------O
+vbencekigra: Stanje3 -> Kretanje zetonima po ploci
+vbencekigra: vbencek@localhost/ccea5-gv šalje poruku: 7;6
+vbencekigra: Pomak žetona: 7 -> 6
+vbencek@localhost (Broj žetona): 9
+vbencek1@localhost (Broj žetona): 6
+O----------¤----------X
+|          |          |
+|  X-------¤-------¤  |
+|  |       |       |  |
+|  |   O---¤---O   |  |
+|  |   |       |   |  |
+O--¤---X       O---¤--X
+|  |   |       |   |  |
+|  |   ¤---X---O   |  |
+|  |       |       |  |
+|  O-------¤-------X  |
+|          |          |
+¤----------O----------O
+vbencekigra: vbencek1@localhost/U5YUuVKh šalje poruku: 9;10
+vbencekigra: Pomak žetona: 9 -> 10
+vbencek@localhost (Broj žetona): 9
+vbencek1@localhost (Broj žetona): 6
+O----------¤----------X
+|          |          |
+|  ¤-------X-------¤  |
+|  |       |       |  |
+|  |   O---¤---O   |  |
+|  |   |       |   |  |
+O--¤---X       O---¤--X
+|  |   |       |   |  |
+|  |   ¤---X---O   |  |
+|  |       |       |  |
+|  O-------¤-------X  |
+|          |          |
+¤----------O----------O
+vbencekigra: Stanje3 -> Kretanje zetonima po ploci
+vbencekigra: vbencek@localhost/ccea5-gv šalje poruku: 8;7
+vbencekigra: Pomak žetona: 8 -> 7
+vbencek@localhost (Broj žetona): 9
+vbencek1@localhost (Broj žetona): 6
+O----------¤----------X
+|          |          |
+|  ¤-------X-------¤  |
+|  |       |       |  |
+|  |   O---¤---O   |  |
+|  |   |       |   |  |
+¤--¤---X       O---¤--X
+|  |   |       |   |  |
+|  |   ¤---X---O   |  |
+|  |       |       |  |
+|  O-------¤-------X  |
+|          |          |
+O----------O----------O
+vbencekigra: MLIN!
+vbencekigra: vbencek@localhost/ccea5-gv šalje poruku: 24
+vbencekigra: Maknut žeton na poziciji 24!
+vbencek@localhost (Broj žetona): 9
+vbencek1@localhost (Broj žetona): 5
+O----------¤----------X
+|          |          |
+|  ¤-------X-------¤  |
+|  |       |       |  |
+|  |   O---¤---O   |  |
+|  |   |       |   |  |
+¤--¤---¤       O---¤--X
+|  |   |       |   |  |
+|  |   ¤---X---O   |  |
+|  |       |       |  |
+|  O-------¤-------X  |
+|          |          |
+O----------O----------O
+vbencekigra: vbencek1@localhost/U5YUuVKh šalje poruku: 10;9
+vbencekigra: Pomak žetona: 10 -> 9
+vbencek@localhost (Broj žetona): 9
+vbencek1@localhost (Broj žetona): 5
+O----------¤----------X
+|          |          |
+|  X-------¤-------¤  |
+|  |       |       |  |
+|  |   O---¤---O   |  |
+|  |   |       |   |  |
+¤--¤---¤       O---¤--X
+|  |   |       |   |  |
+|  |   ¤---X---O   |  |
+|  |       |       |  |
+|  O-------¤-------X  |
+|          |          |
+O----------O----------O
+vbencekigra: Stanje3 -> Kretanje zetonima po ploci
+vbencekigra: vbencek@localhost/ccea5-gv šalje poruku: 6;14
+vbencekigra: Pomak žetona: 6 -> 14
+vbencek@localhost (Broj žetona): 9
+vbencek1@localhost (Broj žetona): 5
+O----------¤----------X
+|          |          |
+|  X-------¤-------¤  |
+|  |       |       |  |
+|  |   O---¤---O   |  |
+|  |   |       |   |  |
+¤--¤---¤       O---¤--X
+|  |   |       |   |  |
+|  |   ¤---X---O   |  |
+|  |       |       |  |
+|  O-------O-------X  |
+|          |          |
+O----------¤----------O
+vbencekigra: vbencek1@localhost/U5YUuVKh šalje poruku: 4;12
+vbencekigra: Pomak žetona: 4 -> 12
+vbencek@localhost (Broj žetona): 9
+vbencek1@localhost (Broj žetona): 5
+O----------¤----------X
+|          |          |
+|  X-------¤-------¤  |
+|  |       |       |  |
+|  |   O---¤---O   |  |
+|  |   |       |   |  |
+¤--¤---¤       O---X--¤
+|  |   |       |   |  |
+|  |   ¤---X---O   |  |
+|  |       |       |  |
+|  O-------O-------X  |
+|          |          |
+O----------¤----------O
+vbencekigra: Stanje3 -> Kretanje zetonima po ploci
+vbencekigra: vbencek@localhost/ccea5-gv šalje poruku: 14;6
+vbencekigra: Pomak žetona: 14 -> 6
+vbencek@localhost (Broj žetona): 9
+vbencek1@localhost (Broj žetona): 5
+O----------¤----------X
+|          |          |
+|  X-------¤-------¤  |
+|  |       |       |  |
+|  |   O---¤---O   |  |
+|  |   |       |   |  |
+¤--¤---¤       O---X--¤
+|  |   |       |   |  |
+|  |   ¤---X---O   |  |
+|  |       |       |  |
+|  O-------¤-------X  |
+|          |          |
+O----------O----------O
+vbencekigra: MLIN!
+vbencekigra: vbencek@localhost/ccea5-gv šalje poruku: 13
+vbencekigra: Maknut žeton na poziciji 13!
+vbencek@localhost (Broj žetona): 9
+vbencek1@localhost (Broj žetona): 4
+O----------¤----------X
+|          |          |
+|  X-------¤-------¤  |
+|  |       |       |  |
+|  |   O---¤---O   |  |
+|  |   |       |   |  |
+¤--¤---¤       O---X--¤
+|  |   |       |   |  |
+|  |   ¤---X---O   |  |
+|  |       |       |  |
+|  O-------¤-------¤  |
+|          |          |
+O----------O----------O
+vbencekigra: vbencek1@localhost/U5YUuVKh šalje poruku: 3;13
+vbencekigra: Pomak žetona: 3 -> 13
+vbencek@localhost (Broj žetona): 9
+vbencek1@localhost (Broj žetona): 4
+O----------¤----------¤
+|          |          |
+|  X-------¤-------¤  |
+|  |       |       |  |
+|  |   O---¤---O   |  |
+|  |   |       |   |  |
+¤--¤---¤       O---X--¤
+|  |   |       |   |  |
+|  |   ¤---X---O   |  |
+|  |       |       |  |
+|  O-------¤-------X  |
+|          |          |
+O----------O----------O
+vbencekigra: Stanje3 -> Kretanje zetonima po ploci
+vbencekigra: vbencek@localhost/ccea5-gv šalje poruku: 5;4
+vbencekigra: Pomak žetona: 5 -> 4
+vbencek@localhost (Broj žetona): 9
+vbencek1@localhost (Broj žetona): 4
+O----------¤----------¤
+|          |          |
+|  X-------¤-------¤  |
+|  |       |       |  |
+|  |   O---¤---O   |  |
+|  |   |       |   |  |
+¤--¤---¤       O---X--O
+|  |   |       |   |  |
+|  |   ¤---X---O   |  |
+|  |       |       |  |
+|  O-------¤-------X  |
+|          |          |
+O----------O----------¤
+vbencekigra: vbencek1@localhost/U5YUuVKh šalje poruku: 22;11
+vbencekigra: Pomak žetona: 22 -> 11
+vbencek@localhost (Broj žetona): 9
+vbencek1@localhost (Broj žetona): 4
+O----------¤----------¤
+|          |          |
+|  X-------¤-------X  |
+|  |       |       |  |
+|  |   O---¤---O   |  |
+|  |   |       |   |  |
+¤--¤---¤       O---X--O
+|  |   |       |   |  |
+|  |   ¤---¤---O   |  |
+|  |       |       |  |
+|  O-------¤-------X  |
+|          |          |
+O----------O----------¤
+vbencekigra: MLIN!
+vbencekigra: vbencek1@localhost/U5YUuVKh šalje poruku: 7
+vbencekigra: Maknut žeton na poziciji 7!
+vbencek@localhost (Broj žetona): 8
+vbencek1@localhost (Broj žetona): 4
+O----------¤----------¤
+|          |          |
+|  X-------¤-------X  |
+|  |       |       |  |
+|  |   O---¤---O   |  |
+|  |   |       |   |  |
+¤--¤---¤       O---X--O
+|  |   |       |   |  |
+|  |   ¤---¤---O   |  |
+|  |       |       |  |
+|  O-------¤-------X  |
+|          |          |
+¤----------O----------¤
+vbencekigra: Stanje3 -> Kretanje zetonima po ploci
+vbencekigra: vbencek@localhost/ccea5-gv šalje poruku: 6;7
+vbencekigra: Pomak žetona: 6 -> 7
+vbencek@localhost (Broj žetona): 8
+vbencek1@localhost (Broj žetona): 4
+O----------¤----------¤
+|          |          |
+|  X-------¤-------X  |
+|  |       |       |  |
+|  |   O---¤---O   |  |
+|  |   |       |   |  |
+¤--¤---¤       O---X--O
+|  |   |       |   |  |
+|  |   ¤---¤---O   |  |
+|  |       |       |  |
+|  O-------¤-------X  |
+|          |          |
+O----------¤----------¤
+vbencekigra: vbencek1@localhost/U5YUuVKh šalje poruku: 12;10
+vbencekigra: Pomak žetona: 12 -> 10
+vbencek@localhost (Broj žetona): 8
+vbencek1@localhost (Broj žetona): 4
+O----------¤----------¤
+|          |          |
+|  X-------X-------X  |
+|  |       |       |  |
+|  |   O---¤---O   |  |
+|  |   |       |   |  |
+¤--¤---¤       O---¤--O
+|  |   |       |   |  |
+|  |   ¤---¤---O   |  |
+|  |       |       |  |
+|  O-------¤-------X  |
+|          |          |
+O----------¤----------¤
+vbencekigra: MLIN!
+vbencekigra: vbencek1@localhost/U5YUuVKh šalje poruku: 21
+vbencekigra: Maknut žeton na poziciji 21!
+vbencek@localhost (Broj žetona): 7
+vbencek1@localhost (Broj žetona): 4
+O----------¤----------¤
+|          |          |
+|  X-------X-------X  |
+|  |       |       |  |
+|  |   O---¤---O   |  |
+|  |   |       |   |  |
+¤--¤---¤       O---¤--O
+|  |   |       |   |  |
+|  |   ¤---¤---¤   |  |
+|  |       |       |  |
+|  O-------¤-------X  |
+|          |          |
+O----------¤----------¤
+vbencekigra: Stanje3 -> Kretanje zetonima po ploci
+vbencekigra: vbencek@localhost/ccea5-gv šalje poruku: 4;3
+vbencekigra: Pomak žetona: 4 -> 3
+vbencek@localhost (Broj žetona): 7
+vbencek1@localhost (Broj žetona): 4
+O----------¤----------O
+|          |          |
+|  X-------X-------X  |
+|  |       |       |  |
+|  |   O---¤---O   |  |
+|  |   |       |   |  |
+¤--¤---¤       O---¤--¤
+|  |   |       |   |  |
+|  |   ¤---¤---¤   |  |
+|  |       |       |  |
+|  O-------¤-------X  |
+|          |          |
+O----------¤----------¤
+vbencekigra: vbencek1@localhost/U5YUuVKh šalje poruku: 9;12
+vbencekigra: Pomak žetona: 9 -> 12
+vbencek@localhost (Broj žetona): 7
+vbencek1@localhost (Broj žetona): 4
+O----------¤----------O
+|          |          |
+|  ¤-------X-------X  |
+|  |       |       |  |
+|  |   O---¤---O   |  |
+|  |   |       |   |  |
+¤--¤---¤       O---X--¤
+|  |   |       |   |  |
+|  |   ¤---¤---¤   |  |
+|  |       |       |  |
+|  O-------¤-------X  |
+|          |          |
+O----------¤----------¤
+vbencekigra: MLIN!
+vbencekigra: vbencek1@localhost/U5YUuVKh šalje poruku: 1
+vbencekigra: Maknut žeton na poziciji 1!
+vbencek@localhost (Broj žetona): 6
+vbencek1@localhost (Broj žetona): 4
+¤----------¤----------O
+|          |          |
+|  ¤-------X-------X  |
+|  |       |       |  |
+|  |   O---¤---O   |  |
+|  |   |       |   |  |
+¤--¤---¤       O---X--¤
+|  |   |       |   |  |
+|  |   ¤---¤---¤   |  |
+|  |       |       |  |
+|  O-------¤-------X  |
+|          |          |
+O----------¤----------¤
+vbencekigra: Stanje3 -> Kretanje zetonima po ploci
+vbencekigra: vbencek@localhost/ccea5-gv šalje poruku: 17;18
+vbencekigra: Pomak žetona: 17 -> 18
+vbencek@localhost (Broj žetona): 6
+vbencek1@localhost (Broj žetona): 4
+¤----------¤----------O
+|          |          |
+|  ¤-------X-------X  |
+|  |       |       |  |
+|  |   ¤---O---O   |  |
+|  |   |       |   |  |
+¤--¤---¤       O---X--¤
+|  |   |       |   |  |
+|  |   ¤---¤---¤   |  |
+|  |       |       |  |
+|  O-------¤-------X  |
+|          |          |
+O----------¤----------¤
+vbencekigra: vbencek1@localhost/U5YUuVKh šalje poruku: 13;9
+vbencekigra: Pomak žetona: 13 -> 9
+vbencek@localhost (Broj žetona): 6
+vbencek1@localhost (Broj žetona): 4
+¤----------¤----------O
+|          |          |
+|  X-------X-------X  |
+|  |       |       |  |
+|  |   ¤---O---O   |  |
+|  |   |       |   |  |
+¤--¤---¤       O---X--¤
+|  |   |       |   |  |
+|  |   ¤---¤---¤   |  |
+|  |       |       |  |
+|  O-------¤-------¤  |
+|          |          |
+O----------¤----------¤
+vbencekigra: MLIN!
+vbencekigra: vbencek1@localhost/U5YUuVKh šalje poruku: 15
+vbencekigra: Maknut žeton na poziciji 15!
+vbencek@localhost (Broj žetona): 5
+vbencek1@localhost (Broj žetona): 4
+¤----------¤----------O
+|          |          |
+|  X-------X-------X  |
+|  |       |       |  |
+|  |   ¤---O---O   |  |
+|  |   |       |   |  |
+¤--¤---¤       O---X--¤
+|  |   |       |   |  |
+|  |   ¤---¤---¤   |  |
+|  |       |       |  |
+|  ¤-------¤-------¤  |
+|          |          |
+O----------¤----------¤
+vbencekigra: Stanje3 -> Kretanje zetonima po ploci
+vbencekigra: vbencek@localhost/ccea5-gv šalje poruku: 7;6
+vbencekigra: Pomak žetona: 7 -> 6
+vbencek@localhost (Broj žetona): 5
+vbencek1@localhost (Broj žetona): 4
+¤----------¤----------O
+|          |          |
+|  X-------X-------X  |
+|  |       |       |  |
+|  |   ¤---O---O   |  |
+|  |   |       |   |  |
+¤--¤---¤       O---X--¤
+|  |   |       |   |  |
+|  |   ¤---¤---¤   |  |
+|  |       |       |  |
+|  ¤-------¤-------¤  |
+|          |          |
+¤----------O----------¤
+vbencekigra: vbencek1@localhost/U5YUuVKh šalje poruku: 10;13
+vbencekigra: Pomak žetona: 10 -> 13
+vbencek@localhost (Broj žetona): 5
+vbencek1@localhost (Broj žetona): 4
+¤----------¤----------O
+|          |          |
+|  X-------¤-------X  |
+|  |       |       |  |
+|  |   ¤---O---O   |  |
+|  |   |       |   |  |
+¤--¤---¤       O---X--¤
+|  |   |       |   |  |
+|  |   ¤---¤---¤   |  |
+|  |       |       |  |
+|  ¤-------¤-------X  |
+|          |          |
+¤----------O----------¤
+vbencekigra: MLIN!
+vbencekigra: vbencek1@localhost/U5YUuVKh šalje poruku: 19
+vbencekigra: Maknut žeton na poziciji 19!
+vbencek@localhost (Broj žetona): 4
+vbencek1@localhost (Broj žetona): 4
+¤----------¤----------O
+|          |          |
+|  X-------¤-------X  |
+|  |       |       |  |
+|  |   ¤---O---¤   |  |
+|  |   |       |   |  |
+¤--¤---¤       O---X--¤
+|  |   |       |   |  |
+|  |   ¤---¤---¤   |  |
+|  |       |       |  |
+|  ¤-------¤-------X  |
+|          |          |
+¤----------O----------¤
+vbencekigra: Stanje3 -> Kretanje zetonima po ploci
+vbencekigra: vbencek@localhost/ccea5-gv šalje poruku: 3;10
+vbencekigra: Pomak žetona: 3 -> 10
+vbencek@localhost (Broj žetona): 4
+vbencek1@localhost (Broj žetona): 4
+¤----------¤----------¤
+|          |          |
+|  X-------O-------X  |
+|  |       |       |  |
+|  |   ¤---O---¤   |  |
+|  |   |       |   |  |
+¤--¤---¤       O---X--¤
+|  |   |       |   |  |
+|  |   ¤---¤---¤   |  |
+|  |       |       |  |
+|  ¤-------¤-------X  |
+|          |          |
+¤----------O----------¤
+vbencekigra: vbencek1@localhost/U5YUuVKh šalje poruku: 11;24
+vbencekigra: Pomak žetona: 11 -> 24
+vbencek@localhost (Broj žetona): 4
+vbencek1@localhost (Broj žetona): 4
+¤----------¤----------¤
+|          |          |
+|  X-------O-------¤  |
+|  |       |       |  |
+|  |   ¤---O---¤   |  |
+|  |   |       |   |  |
+¤--¤---X       O---X--¤
+|  |   |       |   |  |
+|  |   ¤---¤---¤   |  |
+|  |       |       |  |
+|  ¤-------¤-------X  |
+|          |          |
+¤----------O----------¤
+vbencekigra: Stanje3 -> Kretanje zetonima po ploci
+vbencekigra: vbencek@localhost/ccea5-gv šalje poruku: 20;4
+vbencekigra: Pomak žetona: 20 -> 4
+vbencek@localhost (Broj žetona): 4
+vbencek1@localhost (Broj žetona): 4
+¤----------¤----------¤
+|          |          |
+|  X-------O-------¤  |
+|  |       |       |  |
+|  |   ¤---O---¤   |  |
+|  |   |       |   |  |
+¤--¤---X       ¤---X--O
+|  |   |       |   |  |
+|  |   ¤---¤---¤   |  |
+|  |       |       |  |
+|  ¤-------¤-------X  |
+|          |          |
+¤----------O----------¤
+vbencekigra: vbencek1@localhost/U5YUuVKh šalje poruku: 9;11
+vbencekigra: Pomak žetona: 9 -> 11
+vbencek@localhost (Broj žetona): 4
+vbencek1@localhost (Broj žetona): 4
+¤----------¤----------¤
+|          |          |
+|  ¤-------O-------X  |
+|  |       |       |  |
+|  |   ¤---O---¤   |  |
+|  |   |       |   |  |
+¤--¤---X       ¤---X--O
+|  |   |       |   |  |
+|  |   ¤---¤---¤   |  |
+|  |       |       |  |
+|  ¤-------¤-------X  |
+|          |          |
+¤----------O----------¤
+vbencekigra: MLIN!
+vbencekigra: vbencek1@localhost/U5YUuVKh šalje poruku: 6
+vbencekigra: Maknut žeton na poziciji 6!
+vbencek@localhost (Broj žetona): 3
+vbencek1@localhost (Broj žetona): 4
+¤----------¤----------¤
+|          |          |
+|  ¤-------O-------X  |
+|  |       |       |  |
+|  |   ¤---O---¤   |  |
+|  |   |       |   |  |
+¤--¤---X       ¤---X--O
+|  |   |       |   |  |
+|  |   ¤---¤---¤   |  |
+|  |       |       |  |
+|  ¤-------¤-------X  |
+|          |          |
+¤----------¤----------¤
+vbencekigra: Stanje3 -> Kretanje zetonima po ploci
+vbencekigra: vbencek@localhost/ccea5-gv šalje poruku: 10;15
+vbencekigra: Pomak žetona: 10 -> 15
+vbencek@localhost (Broj žetona): 3
+vbencek1@localhost (Broj žetona): 4
+¤----------¤----------¤
+|          |          |
+|  ¤-------¤-------X  |
+|  |       |       |  |
+|  |   ¤---O---¤   |  |
+|  |   |       |   |  |
+¤--¤---X       ¤---X--O
+|  |   |       |   |  |
+|  |   ¤---¤---¤   |  |
+|  |       |       |  |
+|  O-------¤-------X  |
+|          |          |
+¤----------¤----------¤
+vbencekigra: vbencek1@localhost/U5YUuVKh šalje poruku: 24;10
+vbencekigra: Pomak žetona: 24 -> 10
+vbencek@localhost (Broj žetona): 3
+vbencek1@localhost (Broj žetona): 4
+¤----------¤----------¤
+|          |          |
+|  ¤-------X-------X  |
+|  |       |       |  |
+|  |   ¤---O---¤   |  |
+|  |   |       |   |  |
+¤--¤---¤       ¤---X--O
+|  |   |       |   |  |
+|  |   ¤---¤---¤   |  |
+|  |       |       |  |
+|  O-------¤-------X  |
+|          |          |
+¤----------¤----------¤
+vbencekigra: Stanje3 -> Kretanje zetonima po ploci
+vbencekigra: vbencek@localhost/ccea5-gv šalje poruku: 18;14
+vbencekigra: Pomak žetona: 18 -> 14
+vbencek@localhost (Broj žetona): 3
+vbencek1@localhost (Broj žetona): 4
+¤----------¤----------¤
+|          |          |
+|  ¤-------X-------X  |
+|  |       |       |  |
+|  |   ¤---¤---¤   |  |
+|  |   |       |   |  |
+¤--¤---¤       ¤---X--O
+|  |   |       |   |  |
+|  |   ¤---¤---¤   |  |
+|  |       |       |  |
+|  O-------O-------X  |
+|          |          |
+¤----------¤----------¤
+vbencekigra: vbencek1@localhost/U5YUuVKh šalje poruku: 12;9
+vbencekigra: Pomak žetona: 12 -> 9
+vbencek@localhost (Broj žetona): 3
+vbencek1@localhost (Broj žetona): 4
+¤----------¤----------¤
+|          |          |
+|  X-------X-------X  |
+|  |       |       |  |
+|  |   ¤---¤---¤   |  |
+|  |   |       |   |  |
+¤--¤---¤       ¤---¤--O
+|  |   |       |   |  |
+|  |   ¤---¤---¤   |  |
+|  |       |       |  |
+|  O-------O-------X  |
+|          |          |
+¤----------¤----------¤
+vbencekigra: MLIN!
+vbencekigra: vbencek1@localhost/U5YUuVKh šalje poruku: 14
+vbencekigra: Maknut žeton na poziciji 14!
+vbencek@localhost (Broj žetona): 2
+vbencek1@localhost (Broj žetona): 4
+¤----------¤----------¤
+|          |          |
+|  X-------X-------X  |
+|  |       |       |  |
+|  |   ¤---¤---¤   |  |
+|  |   |       |   |  |
+¤--¤---¤       ¤---¤--O
+|  |   |       |   |  |
+|  |   ¤---¤---¤   |  |
+|  |       |       |  |
+|  O-------¤-------X  |
+|          |          |
+¤----------¤----------¤
+vbencekigra: Stanje4 -> Proglašenje pobjednika
+vbencekigra: Pobjednik je:vbencek1@localhost Čestitke!
+vbencekigra: Stanje5 -> Kraj
+vbencekigra: Završavam FSM ponašanje
+
